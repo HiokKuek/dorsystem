@@ -96,6 +96,7 @@ export default async function CataloguePage({ params }: CataloguePageProps) {
                                 <ProductCard
                                     serialNumber={product.serialNumber}
                                     name={product.name}
+                                    subcategory={product.subcategory}
                                     imagePath={product.imagePath}
                                     detailImagePath={product.detailImagePath}
                                 />

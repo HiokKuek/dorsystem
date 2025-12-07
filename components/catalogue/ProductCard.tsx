@@ -9,6 +9,7 @@ import { useState } from 'react';
 interface ProductCardProps {
     serialNumber: string;
     name: string;
+    subcategory?: string; // New: To display type (e.g. "Door Bolt")
     imagePath: string;
     // isDetail is no longer needed for main cards as we filter them out, 
     // but keeping it optional just in case or if we reuse card for details list
@@ -16,7 +17,7 @@ interface ProductCardProps {
     detailImagePath?: string;
 }
 
-export function ProductCard({ serialNumber, name, imagePath, detailImagePath }: ProductCardProps) {
+export function ProductCard({ serialNumber, name, subcategory, imagePath, detailImagePath }: ProductCardProps) {
     const [showDetail, setShowDetail] = useState(false);
 
     // Heuristic: If name is very similar to serial number, hide it.
@@ -39,20 +40,27 @@ export function ProductCard({ serialNumber, name, imagePath, detailImagePath }: 
                 </div>
 
                 <CardHeader className="p-4 pb-2">
-                    <div className="flex items-center justify-between">
-                        <span className="text-sm font-bold px-2 py-1 bg-zinc-100 dark:bg-zinc-800 rounded text-foreground">
-                            {serialNumber}
-                        </span>
-                        {detailImagePath && (
-                            <Button
-                                variant="outline"
-                                size="icon"
-                                className="h-7 w-fit p-2"
-                                onClick={() => setShowDetail(true)}
-                            >
-                                <Eye className="h-4 w-4 mr-2" />
-                                View Detail
-                            </Button>
+                    <div className="flex flex-col gap-1">
+                        <div className="flex items-center justify-between">
+                            <span className="text-sm font-bold px-2 py-1 bg-zinc-100 dark:bg-zinc-800 rounded text-foreground">
+                                {serialNumber}
+                            </span>
+                            {detailImagePath && (
+                                <Button
+                                    variant="outline"
+                                    size="icon"
+                                    className="h-7 w-fit p-2"
+                                    onClick={() => setShowDetail(true)}
+                                >
+                                    <Eye className="h-4 w-4 mr-2" />
+                                    View Detail
+                                </Button>
+                            )}
+                        </div>
+                        {subcategory && (
+                            <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wide">
+                                {subcategory}
+                            </span>
                         )}
                     </div>
                 </CardHeader>
