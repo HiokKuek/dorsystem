@@ -9,6 +9,9 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Dorsystem - Architectural Ironmongery",
   description: "Premium Architectural Ironmongery Supplier",
+  icons: {
+    icon: "/logo/logo.png",
+  },
 };
 
 export default function RootLayout({

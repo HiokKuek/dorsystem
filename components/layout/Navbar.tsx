@@ -1,6 +1,7 @@
 "use client"
 
 import * as React from "react"
+import Image from "next/image"
 import Link from "next/link"
 import { Menu, ShoppingCart, User, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -13,7 +14,7 @@ export function Navbar() {
         { href: "/", label: "Home" },
         { href: "/shop", label: "Shop" },
         { href: "/project-reference", label: "Projects" },
-        { href: "/product-category/catalogue", label: "Catalogue" },
+        { href: "/catalogue", label: "Catalogue" },
         { href: "/contact", label: "Contact" },
     ]
 
@@ -21,7 +22,14 @@ export function Navbar() {
         <nav className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
             <div className="container flex h-16 items-center justify-between">
                 <Link href="/" className="flex items-center space-x-2">
-                    <span className="text-xl font-bold tracking-tight">DORSYSTEM</span>
+                    <Image
+                        src="/logo/logo-full.png"
+                        alt="Dorsystem Logo"
+                        width={180}
+                        height={40}
+                        priority
+                        className="h-10 w-auto"
+                    />
                 </Link>
 
                 {/* Desktop Menu */}
@@ -57,22 +65,24 @@ export function Navbar() {
             </div>
 
             {/* Mobile Menu */}
-            {isOpen && (
-                <div className="md:hidden border-t bg-background">
-                    <div className="container py-4 space-y-4 flex flex-col">
-                        {navLinks.map((link) => (
-                            <Link
-                                key={link.href}
-                                href={link.href}
-                                className="text-sm font-medium transition-colors hover:text-primary"
-                                onClick={() => setIsOpen(false)}
-                            >
-                                {link.label}
-                            </Link>
-                        ))}
+            {
+                isOpen && (
+                    <div className="md:hidden border-t bg-background">
+                        <div className="container py-4 space-y-4 flex flex-col">
+                            {navLinks.map((link) => (
+                                <Link
+                                    key={link.href}
+                                    href={link.href}
+                                    className="text-sm font-medium transition-colors hover:text-primary"
+                                    onClick={() => setIsOpen(false)}
+                                >
+                                    {link.label}
+                                </Link>
+                            ))}
+                        </div>
                     </div>
-                </div>
-            )}
-        </nav>
+                )
+            }
+        </nav >
     )
 }
