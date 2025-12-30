@@ -12,7 +12,13 @@ const projects = [
     {
         title: "National University Hospital Kent Ridge Wing",
         description: "Supplied specialized hardware for healthcare environments.",
-        image: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=2000&auto=format&fit=crop",
+        image: "/projects/nuh_kr.jpg",
+        inProgress: false
+    },
+    {
+        title: "Interpol Global Complex",
+        description: "High-security facility door solutions.",
+        image: "/projects/interpol.jpg",
         inProgress: false
     },
     {
@@ -24,37 +30,31 @@ const projects = [
     {
         title: "Union Gas Factory @ Genting Road",
         description: "Industrial grade security and door solutions.",
-        image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2000&auto=format&fit=crop",
+        image: "/projects/union.jpeg",
         inProgress: false
     },
     {
         title: "Jalan Lam Huat Industrial",
         description: "Robust ironmongery for industrial developments.",
-        image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2000&auto=format&fit=crop",
-        inProgress: false
-    },
-    {
-        title: "Upgrading A & A Works @ ACJC School",
-        description: "Educational facility hardware upgrades.",
-        image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=2000&auto=format&fit=crop",
+        image: "/projects/lam_huat.jpeg",
         inProgress: false
     },
     {
         title: "Kampung Siglap Mosque",
         description: "Architectural hardware for religious institutions.",
-        image: "https://images.unsplash.com/photo-1564769625805-2410bc30e377?q=80&w=2000&auto=format&fit=crop",
+        image: "/projects/kampung_siglap.jpg",
         inProgress: false
     },
     {
         title: "Singapore Polytechnic Science Blk",
         description: "Specialized laboratory and classroom door hardware.",
-        image: "https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=2000&auto=format&fit=crop",
+        image: "/projects/sp.jpeg",
         inProgress: false
     },
     {
         title: "Northwood Condominium @ Jln Mata Ayer",
         description: "Premium residential ironmongery sets.",
-        image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=2000&auto=format&fit=crop",
+        image: "/projects/northwood.jpeg",
         inProgress: false
     },
     {
@@ -72,97 +72,103 @@ const projects = [
     {
         title: "Sui Generis Condominium @ Balmoral Crescent",
         description: "Luxury condominium door accessories.",
-        image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2000&auto=format&fit=crop",
+        image: "/projects/sui_generis.jpeg",
         inProgress: false
     },
     {
         title: "OLA Residential Flats @ Mountbatten Rd",
         description: "Modern residential housing hardware.",
-        image: "https://images.unsplash.com/photo-1460317442991-0ec239ec363b?q=80&w=2000&auto=format&fit=crop",
+        image: "/projects/ola_resi.jpeg",
         inProgress: false
     },
     {
         title: "Nivana Temple @ Old Choa Chu Kang Rd",
         description: "Cultural and religious facility ironmongery.",
-        image: "https://images.unsplash.com/photo-1590059374637-23469145693b?q=80&w=2000&auto=format&fit=crop",
+        image: "/projects/nivana.jpeg",
         inProgress: false
     },
     {
         title: "Scape Youth Community Ctr @ Orchard Rd",
         description: "Contemporary community center door solutions.",
-        image: "https://images.unsplash.com/photo-1577412647305-991150c7d163?q=80&w=2000&auto=format&fit=crop",
+        image: "/projects/scape.jpeg",
         inProgress: false
     },
     {
         title: "St Andrew Autism School @ Elliot Rd",
         description: "Specialized educational facility hardware.",
-        image: "https://images.unsplash.com/photo-1503945438818-0155b1fec998?q=80&w=2000&auto=format&fit=crop",
+        image: "/projects/sa_autism.jpeg",
         inProgress: false
     },
     {
         title: "West Point Bizhub @ Tuas South Ave 2",
         description: "Commercial business hub ironmongery.",
-        image: "https://images.unsplash.com/photo-1570129477492-45c003edd2be?q=80&w=2000&auto=format&fit=crop",
+        image: "/projects/westpoint.jpeg",
         inProgress: false
     },
     {
-        title: "3 Blks of New Worker Dormitory @ Mandai Estate",
+        title: "New Worker Dormitory @ Mandai Estate",
         description: "Durable hardware for communal living spaces.",
-        image: "https://images.unsplash.com/photo-1555854817-5b2559a2249c?q=80&w=2000&auto=format&fit=crop",
+        image: "/projects/worker_dorm.jpeg",
         inProgress: false
     },
     {
         title: "I Biz @ Old Toh Tuck Rd",
         description: "Modern office and business center hardware.",
-        image: "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2000&auto=format&fit=crop",
+        image: "/projects/ibiz.jpeg",
         inProgress: false
     },
     {
         title: "Solstice Business Ctr @ New Industrial Rd",
         description: "Industrial business center ironmongery.",
-        image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2000&auto=format&fit=crop",
+        image: "/projects/solstice.jpeg",
         inProgress: false
     },
     {
         title: "Dorsett Residences",
         description: "Premium hotel and residential development.",
-        image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=2000&auto=format&fit=crop",
+        image: "/projects/dorsett.jpeg",
         inProgress: false
     },
     {
-        title: "Blk 101 Tan Tock Seng Hospital",
-        description: "Hospital grade security and door controls.",
-        image: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=2000&auto=format&fit=crop",
+        title: "Tan Tock Seng Hospital",
+        description: "Blk 101: Hospital grade security and door controls.",
+        image: "/projects/ttsh.jpeg",
         inProgress: false
     },
     {
         title: "Infinite Studio @ Portsdown Rd",
         description: "Creative studio space specialized hardware.",
-        image: "https://images.unsplash.com/photo-1497366811353-6870744d04b2?q=80&w=2000&auto=format&fit=crop",
+        image: "/projects/infinite.jpeg",
         inProgress: false
     },
     {
-        title: "7 Storey Temasek Polytechnic",
+        title: "Temasek Polytechnic",
         description: "Educational campus architectural ironmongery.",
-        image: "https://images.unsplash.com/photo-1541339906649-c43918b95f26?q=80&w=2000&auto=format&fit=crop",
-        inProgress: false
-    },
-    {
-        title: "Interpol Global Complex",
-        description: "High-security facility door solutions.",
-        image: "https://images.unsplash.com/photo-1557597774-9d2739f85a76?q=80&w=2000&auto=format&fit=crop",
+        image: "/projects/tp.jpeg",
         inProgress: false
     },
     {
         title: "Sentosa Gateway Tunnel",
         description: "Specialized hardware for tunnel infrastructure.",
-        image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=2000&auto=format&fit=crop",
+        image: "/projects/sentosa.jpeg",
         inProgress: false
     },
     {
         title: "Perumal Temple",
         description: "Cultural heritage site architectural hardware.",
-        image: "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?q=80&w=2000&auto=format&fit=crop",
+        image: "/projects/perumal.jpeg",
+        inProgress: false
+    },
+    {
+        title: "St. Luke's Community Hospital",
+        description: "Specialised hardware for hospital infrastructure.",
+        image: "/projects/st_lukes.jpeg",
+        inProgress: false
+    },
+    {
+        title: "Upgrading A & A Works @ ACJC School",
+        description: "Educational facility hardware upgrades.",
+        image: "/projects/acjc.jpeg",
         inProgress: false
     }
 ]
