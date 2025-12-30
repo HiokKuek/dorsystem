@@ -1,9 +1,7 @@
 import { PageHeader } from "@/components/layout/PageHeader"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
 import { MapPin, Phone, Mail, Clock } from "lucide-react"
+import { Card, CardContent } from "@/components/ui/card"
+import { ContactForm } from "@/components/sections/ContactForm"
 
 export default function ContactPage() {
     return (
@@ -14,19 +12,19 @@ export default function ContactPage() {
             />
 
             <div className="container py-16">
-                <div className="grid grid-cols-1">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
                     {/* Contact Info */}
                     <div className="space-y-8">
                         <div>
-                            <h2 className="text-2xl font-bold mb-6">Get in Touch</h2>
-                            <p className="text-muted-foreground mb-8">
+                            <h2 className="text-3xl font-bold mb-6">Get in Touch</h2>
+                            <p className="text-muted-foreground mb-8 text-lg">
                                 We are here to help you with all your architectural ironmongery needs.
                                 Visit our showroom or contact us via phone or email.
                             </p>
                         </div>
 
                         <div className="grid gap-6">
-                            <Card>
+                            <Card className="transition-all hover:border-primary/50">
                                 <CardContent className="flex items-start p-6 space-x-4">
                                     <MapPin className="w-6 h-6 text-primary mt-1" />
                                     <div>
@@ -39,7 +37,7 @@ export default function ContactPage() {
                                 </CardContent>
                             </Card>
 
-                            <Card>
+                            <Card className="transition-all hover:border-primary/50">
                                 <CardContent className="flex items-start p-6 space-x-4">
                                     <Phone className="w-6 h-6 text-primary mt-1" />
                                     <div className="flex-1">
@@ -50,7 +48,7 @@ export default function ContactPage() {
                                 </CardContent>
                             </Card>
 
-                            <Card>
+                            <Card className="transition-all hover:border-primary/50">
                                 <CardContent className="flex items-start p-6 space-x-4">
                                     <Mail className="w-6 h-6 text-primary mt-1" />
                                     <div>
@@ -60,6 +58,11 @@ export default function ContactPage() {
                                 </CardContent>
                             </Card>
                         </div>
+                    </div>
+
+                    {/* Enquiry Form */}
+                    <div className="lg:sticky lg:top-24 h-fit">
+                        <ContactForm />
                     </div>
                 </div>
             </div>
