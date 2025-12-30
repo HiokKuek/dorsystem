@@ -188,6 +188,30 @@ const projects = [
         description: "Logistics warehouse hardware.",
         image: "/projects/db.jpeg",
         inProgress: false
+    },
+    {
+        title: "Factory Development @ ispace",
+        description: "Modern industrial workspace ironmongery solutions.",
+        image: "/projects/ispace.jpeg",
+        inProgress: false
+    },
+    {
+        title: "Factory Development @ Woodlands E9",
+        description: "Robust hardware for industrial and logistics facilities.",
+        image: "/projects/woodlands.jpeg",
+        inProgress: false
+    },
+    {
+        title: "Polyclinic @ Clementi",
+        description: "Healthcare grade door controls and security hardware.",
+        image: "/projects/clementi_poly.jpeg",
+        inProgress: false
+    },
+    {
+        title: "Factory Development @ Tagore Lane",
+        description: "High-spec industrial door solution for boutique factories.",
+        image: "/projects/tagore.jpeg",
+        inProgress: false
     }
 ]
 
