@@ -170,6 +170,24 @@ const projects = [
         description: "Educational facility hardware upgrades.",
         image: "/projects/acjc.jpeg",
         inProgress: false
+    },
+    {
+        title: "United Medicare Centre",
+        description: "Medical facility hardware upgrades.",
+        image: "/projects/united.jpeg",
+        inProgress: false
+    },
+    {
+        title: "Chopard Asia Pte Ltd",
+        description: "Luxury watch retail store hardware.",
+        image: "/projects/chopard.jpeg",
+        inProgress: false
+    },
+    {
+        title: "DB Schenker",
+        description: "Logistics warehouse hardware.",
+        image: "/projects/db.jpeg",
+        inProgress: false
     }
 ]
 
