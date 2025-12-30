@@ -210,7 +210,7 @@ const projects = [
     {
         title: "Factory Development @ Tagore Lane",
         description: "High-spec industrial door solution for boutique factories.",
-        image: "/projects/tagore.jpeg",
+        image: "/projects/tagorelane.jpeg",
         inProgress: false
     }
 ]
