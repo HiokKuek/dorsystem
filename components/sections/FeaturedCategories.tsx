@@ -60,7 +60,7 @@ export function FeaturedCategories() {
         <section className="py-24 bg-background">
             <div className="container">
                 <div className="flex flex-col items-center justify-center text-center mb-16">
-                    <h2 className="text-3xl font-light tracking-tight sm:text-4xl mb-4">Our Collections</h2>
+                    <h2 className="text-3xl font-light tracking-tight sm:text-4xl mb-4">Our Catalogue</h2>
                     <p className="text-muted-foreground max-w-2xl text-lg font-light">
                         Explore our comprehensive range of architectural ironmongery, designed to meet the highest standards of quality and aesthetics.
                     </p>
