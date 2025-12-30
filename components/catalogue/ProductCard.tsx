@@ -41,15 +41,15 @@ export function ProductCard({ serialNumber, name, subcategory, imagePath, detail
 
                 <CardHeader className="p-4 pb-2">
                     <div className="flex flex-col gap-1">
-                        <div className="flex items-center justify-between">
-                            <span className="text-sm font-bold px-2 py-1 bg-zinc-100 dark:bg-zinc-800 rounded text-foreground">
+                        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                            <span className="text-sm font-bold px-2 py-1 bg-zinc-100 dark:bg-zinc-800 rounded text-foreground w-fit">
                                 {serialNumber}
                             </span>
                             {detailImagePath && (
                                 <Button
                                     variant="outline"
-                                    size="icon"
-                                    className="h-7 w-fit p-2"
+                                    size="sm"
+                                    className="h-7 w-fit px-2"
                                     onClick={() => setShowDetail(true)}
                                 >
                                     <Eye className="h-4 w-4 mr-2" />
