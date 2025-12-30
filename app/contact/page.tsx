@@ -32,8 +32,8 @@ export default function ContactPage() {
                                     <div>
                                         <h3 className="font-semibold mb-1">Our Location</h3>
                                         <p className="text-sm text-muted-foreground">
-                                            123 Ironmongery Lane<br />
-                                            Singapore, 123456
+                                            No 1 Soon Lee St, #05-61<br />
+                                            Pioneer Centre, Singapore 627605
                                         </p>
                                     </div>
                                 </CardContent>
@@ -42,9 +42,10 @@ export default function ContactPage() {
                             <Card>
                                 <CardContent className="flex items-start p-6 space-x-4">
                                     <Phone className="w-6 h-6 text-primary mt-1" />
-                                    <div>
-                                        <h3 className="font-semibold mb-1">Phone</h3>
-                                        <p className="text-sm text-muted-foreground">+65 1234 5678</p>
+                                    <div className="flex-1">
+                                        <h3 className="font-semibold mb-1">Contact Details</h3>
+                                        <p className="text-sm text-muted-foreground">Tel: (65) 6899-1787</p>
+                                        <p className="text-sm text-muted-foreground">Fax: (65) 6899-1789</p>
                                     </div>
                                 </CardContent>
                             </Card>
@@ -54,59 +55,11 @@ export default function ContactPage() {
                                     <Mail className="w-6 h-6 text-primary mt-1" />
                                     <div>
                                         <h3 className="font-semibold mb-1">Email</h3>
-                                        <p className="text-sm text-muted-foreground">sales@dorsystem.com</p>
-                                    </div>
-                                </CardContent>
-                            </Card>
-
-                            <Card>
-                                <CardContent className="flex items-start p-6 space-x-4">
-                                    <Clock className="w-6 h-6 text-primary mt-1" />
-                                    <div>
-                                        <h3 className="font-semibold mb-1">Opening Hours</h3>
-                                        <p className="text-sm text-muted-foreground">
-                                            Mon - Fri: 9:00 AM - 6:00 PM<br />
-                                            Sat: 9:00 AM - 1:00 PM<br />
-                                            Sun & PH: Closed
-                                        </p>
+                                        <p className="text-sm text-muted-foreground">dorsystem@hotmail.com</p>
                                     </div>
                                 </CardContent>
                             </Card>
                         </div>
-                    </div>
-
-                    {/* Contact Form */}
-                    <div className="bg-card border rounded-xl p-8 shadow-sm">
-                        <h2 className="text-2xl font-bold mb-6">Send us a Message</h2>
-                        <form className="space-y-6">
-                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                                <div className="space-y-2">
-                                    <label htmlFor="first-name" className="text-sm font-medium">First name</label>
-                                    <Input id="first-name" placeholder="John" />
-                                </div>
-                                <div className="space-y-2">
-                                    <label htmlFor="last-name" className="text-sm font-medium">Last name</label>
-                                    <Input id="last-name" placeholder="Doe" />
-                                </div>
-                            </div>
-
-                            <div className="space-y-2">
-                                <label htmlFor="email" className="text-sm font-medium">Email</label>
-                                <Input id="email" type="email" placeholder="john@example.com" />
-                            </div>
-
-                            <div className="space-y-2">
-                                <label htmlFor="subject" className="text-sm font-medium">Subject</label>
-                                <Input id="subject" placeholder="Project Inquiry" />
-                            </div>
-
-                            <div className="space-y-2">
-                                <label htmlFor="message" className="text-sm font-medium">Message</label>
-                                <Textarea id="message" placeholder="Tell us about your project..." className="min-h-[150px]" />
-                            </div>
-
-                            <Button type="submit" className="w-full">Send Message</Button>
-                        </form>
                     </div>
                 </div>
             </div>

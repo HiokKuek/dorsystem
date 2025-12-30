@@ -45,12 +45,6 @@ export function Navbar() {
                 </div>
 
                 <div className="flex items-center space-x-2">
-                    <Link href="/my-account">
-                        <Button variant="ghost" size="icon">
-                            <User className="h-5 w-5" />
-                            <span className="sr-only">My Account</span>
-                        </Button>
-                    </Link>
                     <Button
                         variant="ghost"
                         size="icon"

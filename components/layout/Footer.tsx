@@ -26,7 +26,6 @@ export function Footer() {
                         <h4 className="mb-4 text-sm font-semibold">Support</h4>
                         <ul className="space-y-2 text-sm text-muted-foreground">
                             <li><Link href="/contact" className="hover:text-foreground">Contact Us</Link></li>
-                            <li><Link href="/my-account" className="hover:text-foreground">My Account</Link></li>
                             <li><Link href="#" className="hover:text-foreground">Privacy Policy</Link></li>
                             <li><Link href="#" className="hover:text-foreground">Terms of Service</Link></li>
                         </ul>
@@ -35,10 +34,11 @@ export function Footer() {
                     <div>
                         <h4 className="mb-4 text-sm font-semibold">Contact</h4>
                         <ul className="space-y-2 text-sm text-muted-foreground">
-                            <li>123 Ironmongery Lane</li>
-                            <li>Singapore, 123456</li>
-                            <li>sales@dorsystem.com</li>
-                            <li>+65 1234 5678</li>
+                            <li>No 1 Soon Lee St, #05-61</li>
+                            <li>Pioneer Centre, Singapore 627605</li>
+                            <li>Tel: (65) 6899-1787</li>
+                            <li>Fax: (65) 6899-1789</li>
+                            <li>Email: dorsystem@hotmail.com </li>
                         </ul>
                     </div>
                 </div>

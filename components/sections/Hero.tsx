@@ -55,13 +55,13 @@ export function Hero() {
                     transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
                     className="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-x-6 sm:space-y-0"
                 >
-                    <Link href="/shop">
-                        <Button size="lg" className="w-full sm:w-auto text-base px-10 h-14 rounded-full bg-primary text-primary-foreground hover:bg-primary/90 transition-all duration-300">
-                            View Collection
+                    <Link href="/catalogue">
+                        <Button variant="outline" size="lg" className="w-full sm:w-auto text-base px-10 h-14 rounded-full bg-primary text-primary-foreground hover:bg-primary/90 hover:scale-105 transition-all duration-300 hover:cursor-pointer">
+                            View Catalogue
                         </Button>
                     </Link>
                     <Link href="/contact">
-                        <Button variant="outline" size="lg" className="w-full sm:w-auto text-base px-10 h-14 rounded-full bg-transparent border-primary/20 text-foreground hover:bg-primary/10 transition-all duration-300">
+                        <Button variant="outline" size="lg" className="w-full sm:w-auto text-base px-10 h-14 rounded-full bg-transparent border-primary/20 text-foreground hover:scale-105 transition-all duration-300 hover:cursor-pointer">
                             Contact Us
                         </Button>
                     </Link>

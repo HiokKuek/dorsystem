@@ -6,32 +6,52 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 
 const categories = [
     {
-        title: "Door Handles",
-        description: "Premium lever handles and pull handles for every style.",
-        icon: DoorOpen,
-        href: "/product-category/catalogue",
-        color: "bg-blue-500/10 text-blue-500",
-    },
-    {
-        title: "Locks & Cylinders",
-        description: "High-security locking systems for peace of mind.",
+        title: "Cylinder",
+        description: "High-precision lock cylinders for maximum security.",
         icon: Lock,
-        href: "/product-category/catalogue",
-        color: "bg-emerald-500/10 text-emerald-500",
+        href: "/catalogue/cylinder",
     },
     {
-        title: "Hinges & Fittings",
-        description: "Durable and smooth-operating hinges for all door types.",
+        title: "Door Accessories",
+        description: "Essential finishing touches for every door installation.",
         icon: Settings,
-        href: "/product-category/catalogue",
-        color: "bg-orange-500/10 text-orange-500",
+        href: "/catalogue/door-accessories",
     },
     {
-        title: "Glass Hardware",
-        description: "Sleek fittings for glass doors and partitions.",
+        title: "Door Closer",
+        description: "Reliable and durable door closing mechanisms.",
+        icon: DoorOpen,
+        href: "/catalogue/door-closer",
+    },
+    {
+        title: "Door Hinge",
+        description: "Smooth-operating hinges for all types of doors.",
+        icon: Settings,
+        href: "/catalogue/door-hinge",
+    },
+    {
+        title: "Lockcase",
+        description: "Robust and secure internal locking mechanisms.",
         icon: Shield,
-        href: "/product-category/catalogue",
-        color: "bg-purple-500/10 text-purple-500",
+        href: "/catalogue/lockcase",
+    },
+    {
+        title: "Pull Handle",
+        description: "Stunning pull handles that make a statement.",
+        icon: DoorOpen,
+        href: "/catalogue/pull-handle",
+    },
+    {
+        title: "Solid Stainless Lever Handle On Rose",
+        description: "Premium solid stainless steel lever handles.",
+        icon: Settings,
+        href: "/catalogue/solid-stainless-lever-handle-on-rose",
+    },
+    {
+        title: "Stainless Steel Tube Lever Handle",
+        description: "Elegant and modern tube lever handle designs.",
+        icon: Settings,
+        href: "/catalogue/stainless-steel-tube-lever-handle",
     },
 ]
 
