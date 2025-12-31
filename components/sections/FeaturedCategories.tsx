@@ -15,19 +15,19 @@ const categories = [
         title: "Door Accessories",
         description: "Essential finishing touches for every door installation.",
         icon: Settings,
-        href: "/catalogue/door%20accessories",
+        href: "/catalogue/door-accessories",
     },
     {
         title: "Door Closer",
         description: "Reliable and durable door closing mechanisms.",
         icon: DoorOpen,
-        href: "/catalogue/door%20closer",
+        href: "/catalogue/door-closer",
     },
     {
         title: "Door Hinge",
         description: "Smooth-operating hinges for all types of doors.",
         icon: Settings,
-        href: "/catalogue/door%20hinge",
+        href: "/catalogue/door-hinge",
     },
     {
         title: "Lockcase",
@@ -39,19 +39,19 @@ const categories = [
         title: "Pull Handle",
         description: "Stunning pull handles that make a statement.",
         icon: DoorOpen,
-        href: "/catalogue/pull%20handle",
+        href: "/catalogue/pull-handle",
     },
     {
         title: "Solid Stainless Lever Handle On Rose",
         description: "Premium solid stainless steel lever handles.",
         icon: Settings,
-        href: "/catalogue/solid%20stainless%20lever%20handle%20on%20rose",
+        href: "/catalogue/solid-stainless-lever-handle-on-rose",
     },
     {
         title: "Stainless Steel Tube Lever Handle",
         description: "Elegant and modern tube lever handle designs.",
         icon: Settings,
-        href: "/catalogue/stainless%20steel%20tube%20lever%20handle",
+        href: "/catalogue/stainless-steel-tube-lever-handle",
     },
 ]
 

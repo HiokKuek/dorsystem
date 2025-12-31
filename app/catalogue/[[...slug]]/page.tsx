@@ -99,6 +99,7 @@ export default async function CataloguePage({ params }: CataloguePageProps) {
                                     subcategory={product.subcategory}
                                     imagePath={product.imagePath}
                                     detailImagePath={product.detailImagePath}
+                                    description={product.description}
                                 />
                             </div>
                         ))}
