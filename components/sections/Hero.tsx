@@ -17,7 +17,7 @@ export function Hero() {
                 <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[500px] bg-primary/5 blur-[120px] rounded-full pointer-events-none" />
             </div>
 
-            <div className="container relative z-10 mx-auto px-6 text-center">
+            <div className="container relative z-10 mx-auto px-4 text-center">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -33,10 +33,11 @@ export function Hero() {
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-                    className="mb-8 text-4xl font-light tracking-tight sm:text-6xl md:text-7xl text-foreground"
+                    className="mb-8 text-5xl font-light tracking-tight sm:text-6xl md:text-7xl text-foreground"
                 >
                     Precision in <br className="hidden sm:block" />
-                    <span className="font-serif italic opacity-90 text-primary">Every Detail</span>
+                    <span className="font-serif italic opacity-90 text-primary pr-2">Every</span>
+                    <span className="font-serif italic opacity-90 text-primary pr-2">Detail</span>
                 </motion.h1>
 
                 <motion.p
