@@ -33,7 +33,7 @@ export function Hero() {
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-                    className="mb-8 text-5xl font-light tracking-tight sm:text-7xl md:text-8xl text-foreground"
+                    className="mb-8 text-4xl font-light tracking-tight sm:text-6xl md:text-7xl text-foreground"
                 >
                     Precision in <br className="hidden sm:block" />
                     <span className="font-serif italic opacity-90 text-primary">Every Detail</span>
