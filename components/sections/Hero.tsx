@@ -17,7 +17,7 @@ export function Hero() {
                 <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[500px] bg-primary/5 blur-[120px] rounded-full pointer-events-none" />
             </div>
 
-            <div className="container relative z-10 mx-auto px-4 text-center">
+            <div className="container relative z-10 mx-auto px-6 text-center">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
